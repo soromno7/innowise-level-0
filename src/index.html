@@ -1,11 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>TEST</title>
-</head>
-<body>
-    <h1>Test123213</h1>
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="theme-switcher">
+        <input type="checkbox" id="theme-toggle" class="theme-toggle" />
+        <label for="theme-toggle" class="theme-toggle-label">
+          <span class="theme-toggle-slider"></span>
+        </label>
+      </div>
+      <div class="calculator">
+        <div class="calculator-row one">
+          <input type="text" class="calculator-input" readonly />
+        </div>
+        <div class="calculator-row">
+          <div class="calculator-row-item sm">AC</div>
+          <div class="calculator-row-item sm">±</div>
+          <div class="calculator-row-item sm">%</div>
+          <div class="calculator-row-item sm">÷</div>
+        </div>
+        <div class="calculator-row">
+          <div class="calculator-row-item sm">7</div>
+          <div class="calculator-row-item sm">8</div>
+          <div class="calculator-row-item sm">9</div>
+          <div class="calculator-row-item sm">×</div>
+        </div>
+        <div class="calculator-row">
+          <div class="calculator-row-item sm">4</div>
+          <div class="calculator-row-item sm">5</div>
+          <div class="calculator-row-item sm">6</div>
+          <div class="calculator-row-item sm">-</div>
+        </div>
+        <div class="calculator-row">
+          <div class="calculator-row-item sm">1</div>
+          <div class="calculator-row-item sm">2</div>
+          <div class="calculator-row-item sm">3</div>
+          <div class="calculator-row-item sm">+</div>
+        </div>
+        <div class="calculator-row 6">
+          <div class="calculator-row-item lg">0</div>
+          <div class="calculator-row-item sm">,</div>
+          <div class="calculator-row-item sm">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

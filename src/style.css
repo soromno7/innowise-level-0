@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calculator {
+  background: #535353;
+  width: 23.3rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 38px -2px rgba(0,0,0,0.55);
+}
+
+.calculator-input {
+  text-align: right;
+  outline: none;
+  background: #535353;
+  width: 100%;
+  color: white;
+  font-size: 5rem;
+  border: none;
+  padding: 0px 10px;
+}
+
+.calculator-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.calculator-row:nth-child(1) {
+  padding-top: 1rem;
+}
+
+.calculator-row:last-child {
+  margin: 0;
+}
+
+.calculator-row-item {
+  cursor: pointer;
+  background: #646464;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-row-item.sm {
+  width: 90px;
+  height: 90px;
+}
+
+.calculator-row-item.lg {
+  width: 184px;
+  height: 90px;
+  border-bottom-left-radius: 15px;
+}
+
+.calculator-row-item.sm:last-child {
+  background: #FF9F0A;
+}
+
+.calculator-row:last-child > .calculator-row-item.sm:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.theme-switcher {
+  position: absolute;
+  top: -50px;
+  right: 155px;
+  z-index: 10;
+}
+
+.theme-toggle {
+  display: none;
+}
+
+.theme-toggle-label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #646464;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-label .theme-toggle-slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:checked + .theme-toggle-label {
+  background-color: #fffd7d;
+}
+
+.theme-toggle:checked + .theme-toggle-label .theme-toggle-slider {
+  transform: translateX(30px);
+}
+
+.calculator.light {
+  background: #fffd7d;
+}
+
+.calculator.light .calculator-input {
+  background: #fffd7d;
+  color: black;
+}
+
+.calculator.light .calculator-row-item {
+  background: #e8e673;
+  color: black;
+}
+
+.calculator.light .calculator-row-item.sm:last-child {
+  background: #FF9F0A;
+  color: black;
+}
