@@ -8,5 +8,6 @@ How to run the app:
 3. npm start
 
 Directory structure:
+
 /dist - This folder is where Webpack stores the optimized and bundled files (bundle.js, index.html) ready for deployment to a server
 /src - This folder contains the source files of the project (JavaScript, CSS, HTML) used during development
